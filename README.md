@@ -6,7 +6,6 @@ A series of simple function nodes are used to solve the problems I encounter in 
 ## Blender_Bridge
   Used to send 3D models from Comfyui to Blender. With [Blender layer](https://github.com/Yuntokon/BlenderLayer) and [krita-ai-diffusion](https://github.com/Acly/krita-ai-diffusion), you can achieve collaborative creation among Blender, Krita, and Comfyui.  
   用于从Comfyui向Blender中发送3D模型。配合[Blender layer](https://github.com/Yuntokon/BlenderLayer)和[krita-ai-diffusion](https://github.com/Acly/krita-ai-diffusion)可实现Blender&Krita&Comfyui三者互通协同创作  
-  **Example Video**  
   
 
 https://github.com/user-attachments/assets/d91ebd9a-f775-42ff-b1d4-3d611e7c1732
