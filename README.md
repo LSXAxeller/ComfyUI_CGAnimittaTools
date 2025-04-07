@@ -7,7 +7,8 @@ A series of simple function nodes are used to solve the problems I encounter in 
   Used to send 3D models from Comfyui to Blender. With [Blender layer](https://github.com/Yuntokon/BlenderLayer) and [krita-ai-diffusion](https://github.com/Acly/krita-ai-diffusion), you can achieve collaborative creation among Blender, Krita, and Comfyui.  
   用于从Comfyui向Blender中发送3D模型。配合[Blender layer](https://github.com/Yuntokon/BlenderLayer)和[krita-ai-diffusion](https://github.com/Acly/krita-ai-diffusion)可实现Blender&Krita&Comfyui三者互通协同创作  
   **Example Video**  
-  https://github.com/user-attachments/assets/7cd63634-1e96-400f-b479-49567e60ea84    
+  https://github.com/user-attachments/assets/7cd63634-1e96-400f-b479-49567e60ea84
+  
   ![Blender_Bridge1](https://github.com/user-attachments/assets/70f82558-559a-45a7-8b32-f85500f9e4e2)
   ![Blender_Bridge2](https://github.com/user-attachments/assets/864a19cc-bfca-477e-81ee-569bd662d82d)  
   
@@ -21,7 +22,7 @@ A series of simple function nodes are used to solve the problems I encounter in 
   列出文件夹下所有子文件夹的名称数量  
   ![List_Subfolders](https://github.com/user-attachments/assets/fadd93c6-f264-4a1c-bc4e-c7d767c3807d)  
   
-  **Text_Reader**
+## Text_Reader
   Read the name and contents of a text file  
   读取文本文件的名称和内容  
   ![Text_Reader](https://github.com/user-attachments/assets/4bec279b-af32-4904-87e0-1994e86df333)  
@@ -29,24 +30,24 @@ A series of simple function nodes are used to solve the problems I encounter in 
   **It is recommended to use it with the loop node to batch process files. For examples, see the workflows folder.  
   建议与循环节点一起使用来批量处理文件。有关示例，请参阅工作流文件夹。**
 
-  **FrameExtractionNode**
+## FrameExtractionNode
   Extract partial frames proportionally  
   按比例提取部分帧
   ![FrameExtractionNode](https://github.com/user-attachments/assets/cd86a17f-5b7f-44ec-ae6f-5233024502eb)  
 
-  **BlackBorderCrop_node**
+## BlackBorderCrop_node
   Crop the black edges of the image  
   裁切掉图像的黑边  
   ![BlackBorderCrop_node](https://github.com/user-attachments/assets/2fd67bf2-4450-4a71-87c4-3537b376a16c)  
 
-  **PromptNegative_Selector**
+## PromptNegative_Selector
   Commonly used negative prompt words preset  
   常用负面提示词预设  
   ![PromptNegative_Selector](https://github.com/user-attachments/assets/7af5c890-565f-4906-9bc6-e6b7c525e103)  
 
-  **DesaturateNode**
+## DesaturateNode
   Desaturate the image by brightness method  
-  按照明度方法给图像去色  
+  使用明度方法给图像去色  
   ![DesaturateNode](https://github.com/user-attachments/assets/d5802972-9fa4-4031-931b-949ef6380c77)
 
 
