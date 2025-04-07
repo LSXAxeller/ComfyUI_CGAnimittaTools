@@ -1,0 +1,467 @@
+{
+  "last_node_id": 23,
+  "last_link_id": 81,
+  "nodes": [
+    {
+      "id": 3,
+      "type": "ETN_Parameter",
+      "pos": [
+        152.75714111328125,
+        1226.4541015625
+      ],
+      "size": [
+        303.96142578125,
+        163.99356079101562
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "value",
+          "localized_name": "value",
+          "type": "INT",
+          "links": [
+            54
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ETN_Parameter"
+      },
+      "widgets_values": [
+        "port",
+        "number (integer)",
+        54321,
+        1024,
+        65535
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 16,
+      "type": "CR Simple Text Watermark",
+      "pos": [
+        775.3863525390625,
+        389.9590148925781
+      ],
+      "size": [
+        352.79998779296875,
+        270
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "localized_name": "image",
+          "type": "IMAGE",
+          "link": 52
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "localized_name": "图像",
+          "type": "IMAGE",
+          "links": [
+            81
+          ]
+        },
+        {
+          "name": "show_help",
+          "localized_name": "show_help",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CR Simple Text Watermark"
+      },
+      "widgets_values": [
+        "Task Done !",
+        "center",
+        1,
+        "Oswald-Bold.ttf",
+        100,
+        "white",
+        0,
+        0,
+        "#000000"
+      ]
+    },
+    {
+      "id": 4,
+      "type": "ETN_Parameter",
+      "pos": [
+        149.12168884277344,
+        1450.78173828125
+      ],
+      "size": [
+        315,
+        154
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "value",
+          "localized_name": "value",
+          "type": "BOOLEAN",
+          "links": [
+            49
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ETN_Parameter"
+      },
+      "widgets_values": [
+        "四边面",
+        "toggle",
+        false,
+        0,
+        0
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 11,
+      "type": "CR Color Tint",
+      "pos": [
+        436.5660705566406,
+        397.82830810546875
+      ],
+      "size": [
+        315,
+        126
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "localized_name": "image",
+          "type": "IMAGE",
+          "link": 68
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "localized_name": "图像",
+          "type": "IMAGE",
+          "links": [
+            52
+          ]
+        },
+        {
+          "name": "show_help",
+          "localized_name": "show_help",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CR Color Tint"
+      },
+      "widgets_values": [
+        1,
+        "green",
+        "#000000"
+      ]
+    },
+    {
+      "id": 23,
+      "type": "ETN_KritaOutput",
+      "pos": [
+        1151.1981201171875,
+        393.454833984375
+      ],
+      "size": [
+        200,
+        100
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "localized_name": "images",
+          "type": "IMAGE",
+          "link": 81
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "ETN_KritaOutput"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 2,
+      "type": "ETN_KritaCanvas",
+      "pos": [
+        99.0877456665039,
+        723.0526733398438
+      ],
+      "size": [
+        248.25289916992188,
+        121.28189849853516
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "image",
+          "localized_name": "image",
+          "type": "IMAGE",
+          "links": [
+            68,
+            70
+          ]
+        },
+        {
+          "name": "width",
+          "localized_name": "width",
+          "type": "INT",
+          "links": []
+        },
+        {
+          "name": "height",
+          "localized_name": "height",
+          "type": "INT",
+          "links": []
+        },
+        {
+          "name": "seed",
+          "localized_name": "seed",
+          "type": "INT",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ETN_KritaCanvas"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 15,
+      "type": "TripoAPIDraft",
+      "pos": [
+        773.87939453125,
+        723.1940307617188
+      ],
+      "size": [
+        400,
+        500
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "localized_name": "image",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": 70
+        },
+        {
+          "name": "image_left",
+          "localized_name": "image_left",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": null
+        },
+        {
+          "name": "image_back",
+          "localized_name": "image_back",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": null
+        },
+        {
+          "name": "image_right",
+          "localized_name": "image_right",
+          "type": "IMAGE",
+          "shape": 7,
+          "link": null
+        },
+        {
+          "name": "quad",
+          "type": "BOOLEAN",
+          "shape": 7,
+          "widget": {
+            "name": "quad"
+          },
+          "link": 49
+        }
+      ],
+      "outputs": [
+        {
+          "name": "model_file",
+          "localized_name": "model_file",
+          "type": "STRING",
+          "links": [
+            53
+          ]
+        },
+        {
+          "name": "model task_id",
+          "localized_name": "model task_id",
+          "type": "MODEL_TASK_ID",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "TripoAPIDraft"
+      },
+      "widgets_values": [
+        "image_to_model",
+        "",
+        "",
+        "v2.5-20250123",
+        "None",
+        true,
+        true,
+        42,
+        42,
+        42,
+        "standard",
+        "original_image",
+        -1,
+        false,
+        [
+          false,
+          true
+        ]
+      ]
+    },
+    {
+      "id": 17,
+      "type": "CGA_BlenderBridge ",
+      "pos": [
+        1216.439208984375,
+        733.3251342773438
+      ],
+      "size": [
+        315,
+        102
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model_path",
+          "type": "STRING",
+          "widget": {
+            "name": "model_path"
+          },
+          "link": 53
+        },
+        {
+          "name": "port",
+          "type": "INT",
+          "widget": {
+            "name": "port"
+          },
+          "link": 54
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "CGA_BlenderBridge "
+      },
+      "widgets_values": [
+        "",
+        54321
+      ]
+    }
+  ],
+  "links": [
+    [
+      49,
+      4,
+      0,
+      15,
+      4,
+      "BOOLEAN"
+    ],
+    [
+      52,
+      11,
+      0,
+      16,
+      0,
+      "IMAGE"
+    ],
+    [
+      53,
+      15,
+      0,
+      17,
+      0,
+      "STRING"
+    ],
+    [
+      54,
+      3,
+      0,
+      17,
+      1,
+      "INT"
+    ],
+    [
+      68,
+      2,
+      0,
+      11,
+      0,
+      "IMAGE"
+    ],
+    [
+      70,
+      2,
+      0,
+      15,
+      0,
+      "IMAGE"
+    ],
+    [
+      81,
+      16,
+      0,
+      23,
+      0,
+      "IMAGE"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.7972024500000015,
+      "offset": [
+        392.28873295145803,
+        -218.77073201681495
+      ]
+    },
+    "ue_links": [],
+    "workspace_info": {
+      "id": "IaBx-RvHjB0Q9NqwTWqcw"
+    }
+  },
+  "version": 0.4
+}
