@@ -12,7 +12,8 @@ https://github.com/user-attachments/assets/d91ebd9a-f775-42ff-b1d4-3d611e7c1732
 
 
   
-  ![info3d](https://github.com/user-attachments/assets/ac68ee3f-a3b1-4f4e-b20a-e3967a0187f2)
+ ![info3dv2](https://github.com/user-attachments/assets/a2f59e12-92e6-48d3-86c4-72bbadc9a025)
+
 
   ![Blender_Bridge2](https://github.com/user-attachments/assets/864a19cc-bfca-477e-81ee-569bd662d82d)  
   
