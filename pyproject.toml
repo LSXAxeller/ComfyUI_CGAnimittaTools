@@ -10,6 +10,6 @@ Repository = "https://github.com/cganimitta/ComfyUI_CGAnimittaTools"
 #  Used by Comfy Registry https://comfyregistry.org
 
 [tool.comfy]
-PublisherId = ""
+PublisherId = "cganimitta"
 DisplayName = "ComfyUI_CGAnimittaTools"
 Icon = ""
