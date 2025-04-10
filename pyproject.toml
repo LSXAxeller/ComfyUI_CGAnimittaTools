@@ -1,0 +1,15 @@
+[project]
+name = "cganimittatools"
+description = "A series of functional custom plugins, including Blender Bridge, Extract the value of any list type data, read text files, etc."
+version = "1.0.0"
+license = {file = "LICENSE"}
+dependencies = ["torch", "numpy", "pathlib"]
+
+[project.urls]
+Repository = "https://github.com/cganimitta/ComfyUI_CGAnimittaTools"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = ""
+DisplayName = "ComfyUI_CGAnimittaTools"
+Icon = ""
