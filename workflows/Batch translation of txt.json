@@ -1,6 +1,8 @@
 {
-  "last_node_id": 32,
-  "last_link_id": 49,
+  "id": "e8deacfc-f976-44be-8599-8e5c4faa8a0c",
+  "revision": 0,
+  "last_node_id": 34,
+  "last_link_id": 53,
   "nodes": [
     {
       "id": 10,
@@ -14,12 +16,11 @@
         78
       ],
       "flags": {},
-      "order": 6,
+      "order": 5,
       "mode": 0,
       "inputs": [
         {
           "name": "input_data",
-          "localized_name": "input_data",
           "type": "*",
           "link": 12
         },
@@ -35,15 +36,16 @@
       "outputs": [
         {
           "name": "*",
-          "localized_name": "*",
           "type": "*",
+          "slot_index": 0,
           "links": [
             14
-          ],
-          "slot_index": 0
+          ]
         }
       ],
       "properties": {
+        "aux_id": "cganimitta/ComfyUI_CGAnimittaTools",
+        "ver": "90d93ad1c628918d523f1f92898eadc2a1a2d11c",
         "Node name for S&R": "CGA_ExtractFromList"
       },
       "widgets_values": [
@@ -62,7 +64,7 @@
         78
       ],
       "flags": {},
-      "order": 4,
+      "order": 3,
       "mode": 0,
       "inputs": [
         {
@@ -77,24 +79,24 @@
       "outputs": [
         {
           "name": "file_names",
-          "localized_name": "file_names",
           "type": "LIST",
+          "slot_index": 0,
           "links": [
             16
-          ],
-          "slot_index": 0
+          ]
         },
         {
           "name": "file_contents",
-          "localized_name": "file_contents",
           "type": "LIST",
+          "slot_index": 1,
           "links": [
             12
-          ],
-          "slot_index": 1
+          ]
         }
       ],
       "properties": {
+        "aux_id": "cganimitta/ComfyUI_CGAnimittaTools",
+        "ver": "90d93ad1c628918d523f1f92898eadc2a1a2d11c",
         "Node name for S&R": "CGA_TxtReaderNode"
       },
       "widgets_values": [
@@ -113,12 +115,11 @@
         78
       ],
       "flags": {},
-      "order": 5,
+      "order": 4,
       "mode": 0,
       "inputs": [
         {
           "name": "input_data",
-          "localized_name": "input_data",
           "type": "*",
           "link": 16
         },
@@ -134,15 +135,16 @@
       "outputs": [
         {
           "name": "*",
-          "localized_name": "*",
           "type": "*",
+          "slot_index": 0,
           "links": [
             18
-          ],
-          "slot_index": 0
+          ]
         }
       ],
       "properties": {
+        "aux_id": "cganimitta/ComfyUI_CGAnimittaTools",
+        "ver": "90d93ad1c628918d523f1f92898eadc2a1a2d11c",
         "Node name for S&R": "CGA_ExtractFromList"
       },
       "widgets_values": [
@@ -150,80 +152,170 @@
       ]
     },
     {
-      "id": 13,
-      "type": "Any To String (mtb)",
+      "id": 18,
+      "type": "easy batchAnything",
       "pos": [
-        1235.3460693359375,
-        -646.774169921875
+        2536.445556640625,
+        -595.6950073242188
       ],
       "size": [
-        239.40000915527344,
-        26
+        210,
+        46
       ],
       "flags": {},
-      "order": 7,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
-          "name": "input",
-          "localized_name": "input",
+          "label": "any_1",
+          "name": "any_1",
           "type": "*",
-          "link": 18
+          "link": 28
+        },
+        {
+          "label": "any_2",
+          "name": "any_2",
+          "type": "*",
+          "link": 52
         }
       ],
       "outputs": [
         {
-          "name": "STRING",
-          "localized_name": "字符串",
-          "type": "STRING",
+          "label": "batch",
+          "name": "batch",
+          "type": "*",
+          "slot_index": 0,
           "links": [
-            38
-          ],
-          "slot_index": 0
+            26
+          ]
         }
       ],
       "properties": {
-        "Node name for S&R": "Any To String (mtb)"
+        "cnr_id": "comfyui-easy-use",
+        "ver": "b1a875b151f3fd76542cdcb9269961ad330dd5ef",
+        "Node name for S&R": "easy batchAnything"
       },
       "widgets_values": []
     },
     {
-      "id": 11,
-      "type": "Any To String (mtb)",
+      "id": 19,
+      "type": "easy forLoopStart",
       "pos": [
-        1235.2135009765625,
-        -507.2466125488281
+        600,
+        -750
       ],
       "size": [
-        239.40000915527344,
-        26
+        210,
+        118
       ],
       "flags": {},
-      "order": 8,
+      "order": 2,
       "mode": 0,
       "inputs": [
         {
-          "name": "input",
-          "localized_name": "input",
+          "label": "initial_value1",
+          "name": "initial_value1",
+          "shape": 7,
           "type": "*",
-          "link": 14
+          "link": null
+        },
+        {
+          "label": "initial_value2",
+          "name": "initial_value2",
+          "type": "*",
+          "link": null
+        },
+        {
+          "name": "total",
+          "type": "INT",
+          "widget": {
+            "name": "total"
+          },
+          "link": 33
         }
       ],
       "outputs": [
         {
-          "name": "STRING",
-          "localized_name": "字符串",
-          "type": "STRING",
+          "label": "flow",
+          "name": "flow",
+          "shape": 5,
+          "type": "FLOW_CONTROL",
+          "slot_index": 0,
           "links": [
-            23
-          ],
-          "slot_index": 0
+            25
+          ]
+        },
+        {
+          "label": "index",
+          "name": "index",
+          "type": "INT",
+          "slot_index": 1,
+          "links": [
+            45,
+            46
+          ]
+        },
+        {
+          "label": "value1",
+          "name": "value1",
+          "type": "*",
+          "slot_index": 2,
+          "links": [
+            28
+          ]
+        },
+        {
+          "label": "value2",
+          "name": "value2",
+          "type": "*",
+          "links": null
         }
       ],
       "properties": {
-        "Node name for S&R": "Any To String (mtb)"
+        "cnr_id": "comfyui-easy-use",
+        "ver": "b1a875b151f3fd76542cdcb9269961ad330dd5ef",
+        "Node name for S&R": "easy forLoopStart"
       },
-      "widgets_values": []
+      "widgets_values": [
+        3
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 15,
+      "type": "easy int",
+      "pos": [
+        247.86415100097656,
+        -690.9346923828125
+      ],
+      "size": [
+        315,
+        58
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "int",
+          "type": "INT",
+          "slot_index": 0,
+          "links": [
+            33
+          ]
+        }
+      ],
+      "title": "文件数量",
+      "properties": {
+        "cnr_id": "comfyui-easy-use",
+        "ver": "b1a875b151f3fd76542cdcb9269961ad330dd5ef",
+        "Node name for S&R": "easy int"
+      },
+      "widgets_values": [
+        22
+      ]
     },
     {
       "id": 24,
@@ -237,14 +329,13 @@
         214
       ],
       "flags": {},
-      "order": 10,
+      "order": 9,
       "mode": 0,
       "inputs": [
         {
           "name": "image",
-          "localized_name": "image",
-          "type": "IMAGE",
           "shape": 7,
+          "type": "IMAGE",
           "link": null
         },
         {
@@ -275,21 +366,21 @@
       "outputs": [
         {
           "name": "text",
-          "localized_name": "text",
           "type": "STRING",
+          "slot_index": 0,
           "links": [
-            42
-          ],
-          "slot_index": 0
+            51
+          ]
         },
         {
           "name": "image",
-          "localized_name": "image",
           "type": "IMAGE",
           "links": null
         }
       ],
       "properties": {
+        "cnr_id": "comfyui-easy-use",
+        "ver": "b1a875b151f3fd76542cdcb9269961ad330dd5ef",
         "Node name for S&R": "easy saveText"
       },
       "widgets_values": [
@@ -301,136 +392,247 @@
       ]
     },
     {
-      "id": 18,
-      "type": "easy batchAnything",
+      "id": 33,
+      "type": "easy sleep",
       "pos": [
-        2536.445556640625,
-        -595.6950073242188
+        2219.885009765625,
+        -473.24578857421875
+      ],
+      "size": [
+        315,
+        58
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "any",
+          "type": "*",
+          "link": 51
+        }
+      ],
+      "outputs": [
+        {
+          "name": "out",
+          "type": "*",
+          "links": [
+            52
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-easy-use",
+        "ver": "b1a875b151f3fd76542cdcb9269961ad330dd5ef",
+        "Node name for S&R": "easy sleep"
+      },
+      "widgets_values": [
+        2
+      ]
+    },
+    {
+      "id": 32,
+      "type": "easy string",
+      "pos": [
+        246.8736114501953,
+        -572.5673828125
+      ],
+      "size": [
+        315,
+        58
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "string",
+          "type": "STRING",
+          "links": [
+            48,
+            49
+          ]
+        }
+      ],
+      "title": "文件路径",
+      "properties": {
+        "cnr_id": "comfyui-easy-use",
+        "ver": "b1a875b151f3fd76542cdcb9269961ad330dd5ef",
+        "Node name for S&R": "easy string"
+      },
+      "widgets_values": [
+        "D:\\0ai_lab\\测试翻译"
+      ]
+    },
+    {
+      "id": 13,
+      "type": "Any To String (mtb)",
+      "pos": [
+        1237.170654296875,
+        -610.2828369140625
+      ],
+      "size": [
+        239.40000915527344,
+        26
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "input",
+          "type": "*",
+          "link": 18
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "slot_index": 0,
+          "links": [
+            38
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-mtb",
+        "ver": "0e48aaa3e4f1e440a5d7ab42df56b728ced03aca",
+        "Node name for S&R": "Any To String (mtb)"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 11,
+      "type": "Any To String (mtb)",
+      "pos": [
+        1243.424072265625,
+        -522.7555541992188
+      ],
+      "size": [
+        239.40000915527344,
+        26
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "input",
+          "type": "*",
+          "link": 14
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "slot_index": 0,
+          "links": [
+            23
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-mtb",
+        "ver": "0e48aaa3e4f1e440a5d7ab42df56b728ced03aca",
+        "Node name for S&R": "Any To String (mtb)"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 34,
+      "type": "easy showAnything",
+      "pos": [
+        2990.92529296875,
+        -652.9588623046875
       ],
       "size": [
         210,
-        46
+        26
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "anything",
+          "shape": 7,
+          "type": "*",
+          "link": 53
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-easy-use",
+        "ver": "b1a875b151f3fd76542cdcb9269961ad330dd5ef",
+        "Node name for S&R": "easy showAnything"
+      }
+    },
+    {
+      "id": 16,
+      "type": "easy forLoopEnd",
+      "pos": [
+        2760.31201171875,
+        -724.4230346679688
+      ],
+      "size": [
+        178,
+        66
       ],
       "flags": {},
       "order": 12,
       "mode": 0,
       "inputs": [
         {
-          "name": "any_1",
-          "localized_name": "any_1",
-          "label": "any_1",
-          "type": "*",
-          "link": 28
+          "label": "flow",
+          "name": "flow",
+          "shape": 5,
+          "type": "FLOW_CONTROL",
+          "link": 25
         },
         {
-          "name": "any_2",
-          "localized_name": "any_2",
-          "label": "any_2",
-          "type": "*",
-          "link": 43
-        }
-      ],
-      "outputs": [
-        {
-          "name": "batch",
-          "localized_name": "batch",
-          "label": "batch",
-          "type": "*",
-          "links": [
-            26
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "easy batchAnything"
-      },
-      "widgets_values": []
-    },
-    {
-      "id": 19,
-      "type": "easy forLoopStart",
-      "pos": [
-        600,
-        -750
-      ],
-      "size": [
-        210,
-        118
-      ],
-      "flags": {},
-      "order": 3,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "initial_value1",
-          "localized_name": "initial_value1",
           "label": "initial_value1",
-          "type": "*",
+          "name": "initial_value1",
           "shape": 7,
-          "link": null
+          "type": "*",
+          "link": 26
         },
         {
           "name": "initial_value2",
-          "label": "initial_value2",
           "type": "*",
           "link": null
-        },
-        {
-          "name": "total",
-          "type": "INT",
-          "widget": {
-            "name": "total"
-          },
-          "link": 33
         }
       ],
       "outputs": [
         {
-          "name": "flow",
-          "localized_name": "flow",
-          "label": "flow",
-          "type": "FLOW_CONTROL",
-          "shape": 5,
-          "links": [
-            25
-          ],
-          "slot_index": 0
-        },
-        {
-          "name": "index",
-          "localized_name": "index",
-          "label": "index",
-          "type": "INT",
-          "links": [
-            45,
-            46
-          ],
-          "slot_index": 1
-        },
-        {
-          "name": "value1",
-          "localized_name": "value1",
           "label": "value1",
+          "name": "value1",
           "type": "*",
+          "slot_index": 0,
           "links": [
-            28
-          ],
-          "slot_index": 2
+            53
+          ]
         },
         {
           "name": "value2",
-          "label": "value2",
           "type": "*",
           "links": null
         }
       ],
       "properties": {
-        "Node name for S&R": "easy forLoopStart"
+        "cnr_id": "comfyui-easy-use",
+        "ver": "b1a875b151f3fd76542cdcb9269961ad330dd5ef",
+        "Node name for S&R": "easy forLoopEnd"
       },
-      "widgets_values": [
-        3
-      ],
+      "widgets_values": [],
       "color": "#223",
       "bgcolor": "#335"
     },
@@ -446,7 +648,7 @@
         246.0243377685547
       ],
       "flags": {},
-      "order": 9,
+      "order": 8,
       "mode": 0,
       "inputs": [
         {
@@ -461,15 +663,16 @@
       "outputs": [
         {
           "name": "text",
-          "localized_name": "text",
           "type": "STRING",
+          "slot_index": 0,
           "links": [
             37
-          ],
-          "slot_index": 0
+          ]
         }
       ],
       "properties": {
+        "cnr_id": "comfyui_custom_nodes_alekpet",
+        "ver": "1.0.55",
         "Node name for S&R": "GoogleTranslateTextNode"
       },
       "widgets_values": [
@@ -482,249 +685,6 @@
           false,
           true
         ]
-      ]
-    },
-    {
-      "id": 28,
-      "type": "BaiduTranslateNode",
-      "pos": [
-        1488.38916015625,
-        18.118030548095703
-      ],
-      "size": [
-        365.619873046875,
-        252.24884033203125
-      ],
-      "flags": {},
-      "order": 0,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "text",
-          "localized_name": "text",
-          "type": "STRING",
-          "links": null
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "BaiduTranslateNode"
-      },
-      "widgets_values": [
-        "zh",
-        "en",
-        "",
-        "",
-        "",
-        [
-          false,
-          true
-        ]
-      ]
-    },
-    {
-      "id": 26,
-      "type": "Wait",
-      "pos": [
-        2213.692138671875,
-        -497.67132568359375
-      ],
-      "size": [
-        315,
-        58
-      ],
-      "flags": {},
-      "order": 11,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "Input",
-          "localized_name": "Input",
-          "type": "*",
-          "shape": 7,
-          "link": 42
-        }
-      ],
-      "outputs": [
-        {
-          "name": "Output",
-          "localized_name": "Output",
-          "type": "*",
-          "links": [
-            43
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "Wait"
-      },
-      "widgets_values": [
-        2
-      ]
-    },
-    {
-      "id": 15,
-      "type": "easy int",
-      "pos": [
-        247.86415100097656,
-        -690.9346923828125
-      ],
-      "size": [
-        315,
-        58
-      ],
-      "flags": {},
-      "order": 1,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "int",
-          "localized_name": "int",
-          "type": "INT",
-          "links": [
-            33
-          ],
-          "slot_index": 0
-        }
-      ],
-      "title": "文件数量",
-      "properties": {
-        "Node name for S&R": "easy int"
-      },
-      "widgets_values": [
-        22
-      ]
-    },
-    {
-      "id": 16,
-      "type": "easy forLoopEnd",
-      "pos": [
-        2760.31201171875,
-        -724.4230346679688
-      ],
-      "size": [
-        178,
-        66
-      ],
-      "flags": {},
-      "order": 13,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "flow",
-          "localized_name": "flow",
-          "label": "flow",
-          "type": "FLOW_CONTROL",
-          "shape": 5,
-          "link": 25
-        },
-        {
-          "name": "initial_value1",
-          "localized_name": "initial_value1",
-          "label": "initial_value1",
-          "type": "*",
-          "shape": 7,
-          "link": 26
-        },
-        {
-          "name": "initial_value2",
-          "type": "*",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "value1",
-          "localized_name": "value1",
-          "label": "value1",
-          "type": "*",
-          "links": [
-            47
-          ],
-          "slot_index": 0
-        },
-        {
-          "name": "value2",
-          "type": "*",
-          "links": null
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "easy forLoopEnd"
-      },
-      "widgets_values": [],
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
-      "id": 31,
-      "type": "easy showAnything",
-      "pos": [
-        2985.803466796875,
-        -672.5945434570312
-      ],
-      "size": [
-        210,
-        26
-      ],
-      "flags": {},
-      "order": 14,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "anything",
-          "localized_name": "anything",
-          "type": "*",
-          "shape": 7,
-          "link": 47
-        }
-      ],
-      "outputs": [
-        {
-          "name": "output",
-          "localized_name": "output",
-          "type": "*",
-          "links": null
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "easy showAnything"
-      }
-    },
-    {
-      "id": 32,
-      "type": "easy string",
-      "pos": [
-        246.8736114501953,
-        -572.5673828125
-      ],
-      "size": [
-        315,
-        58
-      ],
-      "flags": {},
-      "order": 2,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "string",
-          "localized_name": "string",
-          "type": "STRING",
-          "links": [
-            48,
-            49
-          ]
-        }
-      ],
-      "title": "文件路径",
-      "properties": {
-        "Node name for S&R": "easy string"
-      },
-      "widgets_values": [
-        "D:\\0ai_lab\\测试翻译"
       ]
     }
   ],
@@ -818,22 +778,6 @@
       "STRING"
     ],
     [
-      42,
-      24,
-      0,
-      26,
-      0,
-      "*"
-    ],
-    [
-      43,
-      26,
-      0,
-      18,
-      1,
-      "*"
-    ],
-    [
       45,
       19,
       1,
@@ -850,14 +794,6 @@
       "INT"
     ],
     [
-      47,
-      16,
-      0,
-      31,
-      0,
-      "*"
-    ],
-    [
       48,
       32,
       0,
@@ -872,6 +808,30 @@
       24,
       2,
       "STRING"
+    ],
+    [
+      51,
+      24,
+      0,
+      33,
+      0,
+      "*"
+    ],
+    [
+      52,
+      33,
+      0,
+      18,
+      1,
+      "*"
+    ],
+    [
+      53,
+      16,
+      0,
+      34,
+      0,
+      "*"
     ]
   ],
   "groups": [
@@ -892,10 +852,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.724729500000003,
+      "scale": 0.8769226950000115,
       "offset": [
-        -720.9015893034787,
-        918.1932530157874
+        -1122.0561538728623,
+        875.7195821779572
       ]
     },
     "workspace_info": {
